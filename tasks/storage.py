@@ -15,7 +15,13 @@ class Storage(ABC):
 
 
 class JSONStorage(Storage):
-    """Напиши комментарий"""
+    """
+    JSONStorage является наследником класса Storage
+
+    Methods:
+        read: Чтение данных из JSON файла
+        save: Сохранение данных в хранилище
+    """
     curr_dir = os.path.dirname(os.path.abspath(__file__))
     _path = os.path.join(curr_dir, 'data.json')
 
