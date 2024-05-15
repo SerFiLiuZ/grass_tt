@@ -1,4 +1,4 @@
-from storage import JSONStorage, Storage
+from tasks.storage import JSONStorage, Storage
 
 
 def get_storage() -> Storage:

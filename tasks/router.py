@@ -1,9 +1,9 @@
 
 from fastapi import APIRouter, Depends, status, HTTPException
 
-from storage import Storage
-from depends import get_storage
-from service import TaskManager
+from tasks.storage import Storage
+from tasks.depends import get_storage
+from tasks.service import TaskManager
 
 router = APIRouter(prefix='/tasks')
 

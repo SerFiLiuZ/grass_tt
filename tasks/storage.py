@@ -34,7 +34,7 @@ class JSONStorage(Storage):
         if 'title' not in task:
             raise ValueError("Title is required")
         
-        if task['title'] is None:
+        if task['title'] is None or task['title'].strip() == "":
             raise ValueError("The title cannot be empty")
         
         if not isinstance(task['title'], str):

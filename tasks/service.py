@@ -1,4 +1,4 @@
-from storage import Storage
+from tasks.storage import Storage
 
 
 class TaskManager:
