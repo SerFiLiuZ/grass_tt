@@ -8,5 +8,5 @@ class TaskManager:
     async def get_tasks(self) -> dict:
         return await self.storage.read()
 
-    async def create_task(self) -> str:
-        ...
+    async def create_task(self, task) -> str:
+        return await self.storage.save(task)
