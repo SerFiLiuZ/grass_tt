@@ -34,3 +34,9 @@
  created_at: datetime
  updated_at: datetime
 ```
+
+### Для docker'a:
+```
+docker build -t docker-fastapi-server .
+docker run -d -p 8000:8000 --name task-server docker-fastapi-server
+```
